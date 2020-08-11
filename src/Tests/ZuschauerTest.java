@@ -1,6 +1,6 @@
-/*
 package Tests;
 
+import Basis.Systemfehler;
 import Basis.Widerspruch;
 import Besucher.Zuschauer;
 import Reitsport.Pferd;
@@ -57,29 +57,26 @@ class ZuschauerTest {
     }
 
     @org.junit.jupiter.api.Test
-    void setWette() throws Widerspruch {
+    void setWette() throws Widerspruch, Systemfehler {
         for (int i = 0; i < reitpaar.length; i++){
             reitpaar[i] = new Reitpaar(new Reiter("ReiterName" + i, "ReiterVorname" + i, i,"Verein_"+ i), new Pferd("Pferd"+ i,"Rasse"+i,"Verein_"+ i));
-            reitpaar[i].arenaAnmelden(arena);
+            arena.anmeldenReitpaar(reitpaar[i]);
         }
         zuschauer.arenaBesuchen(arena);
-        arena.getOrga().erstelleSpielplan();
+        arena.erstelleSpieplan();
         zuschauer.setWette("Verein_1",20);
         assertEquals(zuschauer.getBeleg(0).getBelegNr(),1);
     }
 
     @org.junit.jupiter.api.Test
-    void einloesen() throws Widerspruch {
-        setWette();
-        arena.getOrga().spieleSpielen();
-        zuschauer.einloesen(0);
+    void einloesen() throws Widerspruch, Systemfehler {
+        arena.spieleSpielen();
+
         try {
+            zuschauer.einloesen(0);
             zuschauer.getBeleg(0);
         }
-        catch (IndexOutOfBoundsException e){
-            assert true;
-        }
-        catch (NullPointerException e){
+        catch (IndexOutOfBoundsException | NullPointerException e){
             assert true;
         }
 
@@ -89,4 +86,4 @@ class ZuschauerTest {
     void getStandort() {
         assertNull(zuschauer.getStandort());
     }
-}*/
+}

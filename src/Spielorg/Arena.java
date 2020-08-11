@@ -58,5 +58,10 @@ public class Arena {
         return wettbuero;
     }
 
+    public Spielplan getSpielplan(){
+        return orga.getSpielplan();
+    }
+
+
 }
 //TODO Arena Steuerung??

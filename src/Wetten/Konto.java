@@ -28,7 +28,7 @@ public class Konto {
      * @param runden Anzahl der Runden
      */
     public void anzahlKontoRunden(int runden){
-        for (int i = 0; i < runden; i++) {
+        for (int i = 0; i < runden ; i++) {
             konten.add(0.0);
         }
     }

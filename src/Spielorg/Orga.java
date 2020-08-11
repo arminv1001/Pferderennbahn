@@ -7,7 +7,7 @@ import Wetten.Wettbuero;
 import java.util.Arrays;
 
 /**
- * Organisation hinter der Arena
+ * Organisation hinter der Arena und hinter dem Wettbuero
  *
  * @author armin
  */

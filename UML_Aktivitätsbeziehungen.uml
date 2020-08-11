@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="882.0074436592822" y="942.0">Spielorg.Arena</node>
+    <node x="619.4079377304283" y="446.0">Wetten.Wette</node>
+    <node x="361.5289772727277" y="367.0">Wetten.WettID</node>
+    <node x="728.44257037054" y="79.0">Reitsport.Reiter</node>
+    <node x="780.503767188694" y="545.0">Spielorg.Spielablauf</node>
+    <node x="619.814691558442" y="843.0">Wetten.Wettbuero</node>
+    <node x="172.7837891035863" y="664.0">Wetten.Beleg</node>
+    <node x="302.27983392220557" y="0.0">Basis.Mensch</node>
+    <node x="862.0898705035377" y="208.0">Reitsport.Reitpaar</node>
+    <node x="304.2318410516384" y="664.0">Basis.Systemfehler</node>
+    <node x="85.78378910358629" y="843.0">Besucher.BelegListe</node>
+    <node x="903.5615241921871" y="446.0">Spielorg.Spielplan</node>
+    <node x="954.9365241921871" y="664.0">Spielorg.Orga</node>
+    <node x="790.5074436592822" y="843.0">Spielorg.BesucherAnzahl</node>
+    <node x="1124.7859902113023" y="0.0">Reitsport.PferdInt</node>
+    <node x="652.814691558442" y="664.0">Wetten.Quoten</node>
+    <node x="207.39261363636393" y="1081.0">Besucher.Zuschauer</node>
+    <node x="611.9218344155848" y="545.0">Wetten.WettListe</node>
+    <node x="508.92183441558484" y="545.0">Wetten.Konto</node>
+    <node x="1135.2859902113023" y="79.0">Reitsport.Pferd</node>
+    <node x="838.44257037054" y="79.0">Basis.Widerspruch</node>
+    <node x="947.203767188694" y="367.0">Spielorg.AnmeldeListe</node>
+    <node x="906.2574436592822" y="1180.0">Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Wetten.Wettbuero" target="Spielorg.Orga">
+      <point x="37.0" y="-14.5" />
+      <point x="712.314691558442" y="773.0" />
+      <point x="971.2222384779014" y="773.0" />
+      <point x="-21.714285714285722" y="14.5" />
+    </edge>
+    <edge source="Wetten.Wettbuero" target="Basis.Widerspruch">
+      <point x="-26.428571428571445" y="-14.5" />
+      <point x="648.8861201298705" y="773.0" />
+      <point x="498.42183441558484" y="773.0" />
+      <point x="498.42183441558484" y="178.0" />
+      <point x="893.13007037054" y="178.0" />
+      <point x="-7.8125" y="14.5" />
+    </edge>
+    <edge source="Spielorg.Spielplan" target="Basis.Widerspruch">
+      <point x="46.25" y="-14.5" />
+      <point x="1005.3115241921871" y="426.0" />
+      <point x="1089.703767188694" y="426.0" />
+      <point x="1089.703767188694" y="168.0" />
+      <point x="940.00507037054" y="168.0" />
+      <point x="39.0625" y="14.5" />
+    </edge>
+    <edge source="Wetten.Wettbuero" target="Spielorg.Spielplan">
+      <point x="26.428571428571445" y="-14.5" />
+      <point x="701.7432629870134" y="753.0" />
+      <point x="940.5115241921872" y="753.0" />
+      <point x="940.5115241921872" y="525.0" />
+      <point x="931.3115241921871" y="525.0" />
+      <point x="-27.75" y="14.5" />
+    </edge>
+    <edge source="Wetten.Wette" target="Reitsport.Reitpaar">
+      <point x="27.666666666666742" y="-14.5" />
+      <point x="688.5746043970951" y="426.0" />
+      <point x="671.9079377304283" y="426.0" />
+      <point x="671.9079377304283" y="267.0" />
+      <point x="871.2663410917729" y="267.0" />
+      <point x="-42.823529411764696" y="14.5" />
+    </edge>
+    <edge source="Reitsport.Reitpaar" target="Reitsport.Pferd">
+      <point x="20.80000000000001" y="-14.5" />
+      <point x="934.8898705035376" y="178.0" />
+      <point x="1145.6609902113023" y="178.0" />
+      <point x="-31.125" y="14.5" />
+    </edge>
+    <edge source="Besucher.Zuschauer" target="Basis.Widerspruch">
+      <point x="-30.272727272727252" y="-14.5" />
+      <point x="232.61988636363668" y="1041.0" />
+      <point x="75.28378910358629" y="1041.0" />
+      <point x="75.28378910358629" y="148.0" />
+      <point x="846.25507037054" y="148.0" />
+      <point x="-54.6875" y="14.5" />
+    </edge>
+    <edge source="Spielorg.Spielablauf" target="Spielorg.Spielplan">
+      <point x="50.0" y="-14.5" />
+      <point x="893.003767188694" y="525.0" />
+      <point x="912.8115241921871" y="525.0" />
+      <point x="-46.25" y="14.5" />
+    </edge>
+    <edge source="Spielorg.Arena" target="Wetten.Wettbuero">
+      <point x="-36.3125" y="-14.5" />
+      <point x="887.1949436592822" y="922.0" />
+      <point x="675.314691558442" y="922.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="Spielorg.Arena" target="Reitsport.Reitpaar">
+      <point x="36.3125" y="-14.5" />
+      <point x="959.8199436592822" y="922.0" />
+      <point x="1172.4183431524787" y="922.0" />
+      <point x="1172.4183431524787" y="307.0" />
+      <point x="950.7957528564788" y="307.0" />
+      <point x="36.70588235294116" y="14.5" />
+    </edge>
+    <edge source="Spielorg.Spielplan" target="Spielorg.AnmeldeListe">
+      <point x="9.25" y="-14.5" />
+      <point x="968.3115241921871" y="426.0" />
+      <point x="963.703767188694" y="426.0" />
+      <point x="-49.5" y="14.5" />
+    </edge>
+    <edge source="Wetten.Beleg" target="Basis.Widerspruch">
+      <point x="-27.666666666666742" y="-14.5" />
+      <point x="186.61712243691954" y="644.0" />
+      <point x="193.39261363636393" y="644.0" />
+      <point x="193.39261363636393" y="158.0" />
+      <point x="861.88007037054" y="158.0" />
+      <point x="-39.0625" y="14.5" />
+    </edge>
+    <edge source="Spielorg.Orga" target="Spielorg.AnmeldeListe">
+      <point x="26.600000000000023" y="-14.5" />
+      <point x="1019.5365241921872" y="634.0" />
+      <point x="1050.003767188694" y="634.0" />
+      <point x="1050.003767188694" y="416.0" />
+      <point x="1062.703767188694" y="416.0" />
+      <point x="49.5" y="14.5" />
+    </edge>
+    <edge source="Wetten.Quoten" target="Reitsport.Reitpaar">
+      <point x="30.0" y="-14.5" />
+      <point x="727.814691558442" y="644.0" />
+      <point x="741.1718344155848" y="644.0" />
+      <point x="741.1718344155848" y="277.0" />
+      <point x="877.3839881505965" y="277.0" />
+      <point x="-36.70588235294116" y="14.5" />
+    </edge>
+    <edge source="Main" target="Besucher.Zuschauer">
+      <point x="-19.0" y="-14.5" />
+      <point x="925.2574436592822" y="1140.0" />
+      <point x="235.14261363636393" y="1140.0" />
+      <point x="-27.75" y="14.5" />
+    </edge>
+    <edge source="Wetten.Wettbuero" target="Basis.Systemfehler">
+      <point x="-37.0" y="-14.5" />
+      <point x="638.314691558442" y="793.0" />
+      <point x="370.2318410516384" y="793.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="Besucher.Zuschauer" target="Basis.Mensch">
+      <point x="-50.454545454545496" y="-14.5" />
+      <point x="212.43806818181844" y="1061.0" />
+      <point x="44.600000000000136" y="1061.0" />
+      <point x="44.600000000000136" y="49.0" />
+      <point x="313.52983392220557" y="49.0" />
+      <point x="-33.75" y="14.5" />
+    </edge>
+    <edge source="Spielorg.Orga" target="Spielorg.Spielablauf">
+      <point x="-26.599999999999966" y="-14.5" />
+      <point x="966.3365241921872" y="634.0" />
+      <point x="801.3371005220274" y="634.0" />
+      <point x="-41.66666666666666" y="14.5" />
+    </edge>
+    <edge source="Spielorg.Orga" target="Reitsport.Reitpaar">
+      <point x="-34.19999999999999" y="-14.5" />
+      <point x="958.7365241921872" y="644.0" />
+      <point x="770.003767188694" y="644.0" />
+      <point x="770.003767188694" y="297.0" />
+      <point x="889.6192822682435" y="297.0" />
+      <point x="-24.470588235294088" y="14.5" />
+    </edge>
+    <edge source="Wetten.Wettbuero" target="Wetten.WettListe">
+      <point x="-5.285714285714334" y="-14.5" />
+      <point x="670.0289772727276" y="733.0" />
+      <point x="642.314691558442" y="733.0" />
+      <point x="642.314691558442" y="644.0" />
+      <point x="667.4218344155848" y="644.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="Besucher.Zuschauer" target="Wetten.Beleg">
+      <point x="0.0" y="-14.5" />
+      <point x="262.89261363636393" y="1011.0" />
+      <point x="214.2837891035863" y="1011.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="Besucher.Zuschauer" target="Besucher.BelegListe">
+      <point x="-20.181818181818244" y="-14.5" />
+      <point x="242.7107954545457" y="1031.0" />
+      <point x="139.73833455813167" y="1031.0" />
+      <point x="139.73833455813167" y="922.0" />
+      <point x="115.28378910358629" y="922.0" />
+      <point x="-29.5" y="14.5" />
+    </edge>
+    <edge source="Main" target="Spielorg.Arena">
+      <point x="-3.7999999999999545" y="-14.5" />
+      <point x="940.4574436592823" y="1061.0" />
+      <point x="933.8824436592822" y="1061.0" />
+      <point x="10.375" y="14.5" />
+    </edge>
+    <edge source="Besucher.Zuschauer" target="Spielorg.Arena">
+      <point x="40.36363636363626" y="-14.5" />
+      <point x="303.2562500000002" y="1051.0" />
+      <point x="892.3824436592822" y="1051.0" />
+      <point x="-31.125" y="14.5" />
+    </edge>
+    <edge source="Spielorg.Arena" target="Spielorg.Orga">
+      <point x="15.5625" y="-14.5" />
+      <point x="939.0699436592822" y="902.0" />
+      <point x="996.8341243315513" y="902.0" />
+      <point x="996.8341243315513" y="823.0" />
+      <point x="1025.5079527636158" y="823.0" />
+      <point x="32.571428571428555" y="14.5" />
+    </edge>
+    <edge source="Spielorg.Arena" target="Spielorg.Spielplan">
+      <point x="25.9375" y="-14.5" />
+      <point x="949.4449436592822" y="912.0" />
+      <point x="1162.0433431524787" y="912.0" />
+      <point x="1162.0433431524787" y="515.0" />
+      <point x="1005.3115241921871" y="515.0" />
+      <point x="46.25" y="14.5" />
+    </edge>
+    <edge source="Reitsport.Reiter" target="Basis.Mensch">
+      <point x="22.5" y="-14.5" />
+      <point x="795.94257037054" y="49.0" />
+      <point x="381.02983392220557" y="49.0" />
+      <point x="33.75" y="14.5" />
+    </edge>
+    <edge source="Wetten.Wettbuero" target="Wetten.WettID">
+      <point x="-31.71428571428578" y="-14.5" />
+      <point x="643.6004058441562" y="783.0" />
+      <point x="446.7318410516384" y="783.0" />
+      <point x="446.7318410516384" y="426.0" />
+      <point x="406.5289772727277" y="426.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="Wetten.Beleg" target="Wetten.Wette">
+      <point x="27.666666666666742" y="-14.5" />
+      <point x="241.95045577025303" y="644.0" />
+      <point x="231.95045577025292" y="644.0" />
+      <point x="231.95045577025292" y="495.0" />
+      <point x="625.3365091589999" y="495.0" />
+      <point x="-35.571428571428555" y="14.5" />
+    </edge>
+    <edge source="Spielorg.Spielablauf" target="Reitsport.Reitpaar">
+      <point x="0.0" y="-14.5" />
+      <point x="843.003767188694" y="317.0" />
+      <point x="901.8545763858906" y="317.0" />
+      <point x="-12.235294117647072" y="14.5" />
+    </edge>
+    <edge source="Spielorg.AnmeldeListe" target="Reitsport.Reitpaar">
+      <point x="-44.0" y="-14.5" />
+      <point x="969.203767188694" y="337.0" />
+      <point x="932.4428116800082" y="337.0" />
+      <point x="18.35294117647055" y="14.5" />
+    </edge>
+    <edge source="Reitsport.Reitpaar" target="Reitsport.Reiter">
+      <point x="-20.80000000000001" y="-14.5" />
+      <point x="893.2898705035376" y="128.0" />
+      <point x="807.19257037054" y="128.0" />
+      <point x="33.75" y="14.5" />
+    </edge>
+    <edge source="Wetten.WettListe" target="Wetten.Wette">
+      <point x="27.75" y="-14.5" />
+      <point x="695.1718344155848" y="525.0" />
+      <point x="672.7650805875712" y="525.0" />
+      <point x="11.85714285714289" y="14.5" />
+    </edge>
+    <edge source="Main" target="Reitsport.Reitpaar">
+      <point x="19.0" y="-14.5" />
+      <point x="963.2574436592822" y="1140.0" />
+      <point x="1186.1359902113022" y="1140.0" />
+      <point x="1186.1359902113022" y="287.0" />
+      <point x="963.0310469741258" y="287.0" />
+      <point x="48.94117647058823" y="14.5" />
+    </edge>
+    <edge source="Reitsport.Reitpaar" target="Basis.Widerspruch">
+      <point x="0.0" y="-14.5" />
+      <point x="914.0898705035377" y="188.0" />
+      <point x="924.38007037054" y="188.0" />
+      <point x="23.4375" y="14.5" />
+    </edge>
+    <edge source="Wetten.Wettbuero" target="Wetten.Konto">
+      <point x="-21.14285714285711" y="-14.5" />
+      <point x="654.1718344155848" y="763.0" />
+      <point x="528.2318410516384" y="763.0" />
+      <point x="528.2318410516384" y="644.0" />
+      <point x="522.7551677489182" y="644.0" />
+      <point x="-27.66666666666663" y="14.5" />
+    </edge>
+    <edge source="Wetten.Quoten" target="Wetten.WettListe">
+      <point x="0.0" y="-14.5" />
+      <point x="697.814691558442" y="644.0" />
+      <point x="704.4218344155848" y="644.0" />
+      <point x="37.0" y="14.5" />
+    </edge>
+    <edge source="Spielorg.Spielplan" target="Reitsport.Reitpaar">
+      <point x="-46.25" y="-14.5" />
+      <point x="912.8115241921871" y="426.0" />
+      <point x="888.5125907181058" y="426.0" />
+      <point x="888.5125907181058" y="337.0" />
+      <point x="914.0898705035377" y="337.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="Wetten.Wettbuero" target="Wetten.Quoten">
+      <point x="5.285714285714334" y="-14.5" />
+      <point x="680.6004058441563" y="713.0" />
+      <point x="720.314691558442" y="713.0" />
+      <point x="22.5" y="14.5" />
+    </edge>
+    <edge source="Wetten.Wette" target="Wetten.WettID">
+      <point x="-27.66666666666663" y="-14.5" />
+      <point x="633.2412710637618" y="416.0" />
+      <point x="436.5289772727277" y="416.0" />
+      <point x="30.0" y="14.5" />
+    </edge>
+    <edge source="Spielorg.Orga" target="Spielorg.Spielplan">
+      <point x="11.399999999999977" y="-14.5" />
+      <point x="1004.3365241921872" y="525.0" />
+      <point x="986.8115241921871" y="525.0" />
+      <point x="27.75" y="14.5" />
+    </edge>
+    <edge source="Spielorg.Orga" target="Wetten.Wettbuero">
+      <point x="0.0" y="14.5" />
+      <point x="992.9365241921871" y="793.0" />
+      <point x="722.8861201298705" y="793.0" />
+      <point x="47.571428571428555" y="-14.5" />
+    </edge>
+    <edge source="Spielorg.Orga" target="Basis.Widerspruch">
+      <point x="34.19999999999999" y="-14.5" />
+      <point x="1027.1365241921872" y="644.0" />
+      <point x="1100.703767188694" y="644.0" />
+      <point x="1100.703767188694" y="158.0" />
+      <point x="955.63007037054" y="158.0" />
+      <point x="54.6875" y="14.5" />
+    </edge>
+    <edge source="Main" target="Reitsport.Reiter">
+      <point x="-34.19999999999999" y="-14.5" />
+      <point x="910.0574436592823" y="1160.0" />
+      <point x="26.0" y="1160.0" />
+      <point x="26.0" y="128.0" />
+      <point x="739.69257037054" y="128.0" />
+      <point x="-33.75" y="14.5" />
+    </edge>
+    <edge source="Spielorg.Arena" target="Spielorg.BesucherAnzahl">
+      <point x="-5.1875" y="-14.5" />
+      <point x="918.3199436592822" y="892.0" />
+      <point x="900.0074436592822" y="892.0" />
+      <point x="36.5" y="14.5" />
+    </edge>
+    <edge source="Wetten.Wettbuero" target="Wetten.Wette">
+      <point x="15.85714285714289" y="-14.5" />
+      <point x="691.1718344155848" y="733.0" />
+      <point x="758.6004058441563" y="733.0" />
+      <point x="758.6004058441563" y="505.0" />
+      <point x="696.479366301857" y="505.0" />
+      <point x="35.57142857142867" y="14.5" />
+    </edge>
+    <edge source="Wetten.Wette" target="Besucher.Zuschauer">
+      <point x="-11.85714285714289" y="14.5" />
+      <point x="649.0507948732854" y="515.0" />
+      <point x="276.3746981944955" y="515.0" />
+      <point x="276.3746981944955" y="991.0" />
+      <point x="283.0744318181822" y="991.0" />
+      <point x="20.181818181818244" y="-14.5" />
+    </edge>
+    <edge source="Reitsport.Pferd" target="Reitsport.PferdInt">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="Wetten.Quoten" target="Wetten.Konto">
+      <point x="-30.0" y="-14.5" />
+      <point x="667.814691558442" y="634.0" />
+      <point x="578.0885010822515" y="634.0" />
+      <point x="27.66666666666663" y="14.5" />
+    </edge>
+    <edge source="Spielorg.Spielablauf" target="Basis.Widerspruch">
+      <point x="-50.0" y="-14.5" />
+      <point x="793.003767188694" y="525.0" />
+      <point x="801.003767188694" y="525.0" />
+      <point x="801.003767188694" y="188.0" />
+      <point x="908.75507037054" y="188.0" />
+      <point x="7.8125" y="14.5" />
+    </edge>
+    <edge source="Wetten.Wettbuero" target="Reitsport.Reitpaar">
+      <point x="21.14285714285711" y="-14.5" />
+      <point x="696.4575487012991" y="743.0" />
+      <point x="763.8861201298705" y="743.0" />
+      <point x="763.8861201298705" y="287.0" />
+      <point x="883.50163520942" y="287.0" />
+      <point x="-30.588235294117624" y="14.5" />
+    </edge>
+    <edge source="Wetten.Wettbuero" target="Besucher.Zuschauer">
+      <point x="-37.0" y="14.5" />
+      <point x="638.314691558442" y="1041.0" />
+      <point x="293.1653409090912" y="1041.0" />
+      <point x="30.272727272727252" y="-14.5" />
+    </edge>
+    <edge source="Main" target="Reitsport.Pferd">
+      <point x="34.200000000000045" y="-14.5" />
+      <point x="978.4574436592823" y="1160.0" />
+      <point x="1201.335990211302" y="1160.0" />
+      <point x="1201.335990211302" y="188.0" />
+      <point x="1207.9109902113023" y="188.0" />
+      <point x="31.125" y="14.5" />
+    </edge>
+    <edge source="Besucher.BelegListe" target="Wetten.Beleg">
+      <point x="-29.5" y="-14.5" />
+      <point x="115.28378910358629" y="813.0" />
+      <point x="181.08378910358624" y="813.0" />
+      <point x="-33.200000000000045" y="14.5" />
+    </edge>
+    <edge source="Wetten.Wettbuero" target="Wetten.Beleg">
+      <point x="-47.57142857142867" y="-14.5" />
+      <point x="627.7432629870133" y="813.0" />
+      <point x="247.48378910358633" y="813.0" />
+      <point x="33.200000000000045" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.45321276294225166" x="652.447451847487" y="444.5023000841693" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
