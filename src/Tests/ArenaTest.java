@@ -41,7 +41,7 @@ class ArenaTest {
     @Test
     void anmelden() throws Widerspruch {
         Reitpaar reitpaar = new Reitpaar(new Reiter("Name","Vorname",20,"Verein"), new Pferd("Name","Rasse","Verein"));
-        arena.anmeldenReitpaar(reitpaar);
+        reitpaar.anmeldenArena(arena);
         //Reitpaar[] reitpaars = arena.getOrga().getReitpaars();
        // assertEquals(reitpaars[0],reitpaar);
     }

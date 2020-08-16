@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 /**
  * Organisation hinter der Arena und hinter dem Wettbuero
- *
+ * Zuständig für die Anmeldung der Reitpaare, den Spielplan und den Spielablauf
  * @author armin
  */
 public class Orga {
@@ -27,7 +27,7 @@ public class Orga {
     }
 
     /**
-     * Ein Reitpaar meldet sich bei einer Arena an. Es darf von jedem Verein nur ein Paar antretten.
+     * Ein Reitpaar meldet sich bei einer Arena an. Es darf von jedem Verein nur ein Paar antreten.
      *
      * @param reitpaar Reitpaar
      * @return Ob die anmeldung geklappt hat oder nicht
@@ -63,6 +63,7 @@ public class Orga {
 
     /**
      * Spiel spielen
+     * @throws Widerspruch es darf nur einmal das Spiel gepsielt werden
      */
     public void spieleSpielen() throws Widerspruch {
         if (spielplan != null && spielverlauf != null) {

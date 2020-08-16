@@ -27,7 +27,7 @@ class WettbueroTest {
 
         for (int i = 0; i < reitpaar.length; i++){
             reitpaar[i] = new Reitpaar(new Reiter("ReiterName" + i, "ReiterVorname" + i, i,"Verein_"+ i), new Pferd("Pferd"+ i,"Rasse"+i,"Verein_"+ i));
-            arena.anmeldenReitpaar(reitpaar[i]);
+            reitpaar[i].anmeldenArena(arena);
         }
         arena.erstelleSpieplan();
         zuschauer1 = new Zuschauer("Name1", "Vorname1",20,100);
@@ -61,7 +61,7 @@ class WettbueroTest {
         try{
             zuschauer1.getBeleg(0);
         }
-        catch (NullPointerException | IndexOutOfBoundsException e){
+        catch (Widerspruch e){
             assert true;
         }
     }

@@ -1,5 +1,9 @@
 package Spielorg;
 
+/**
+ * Die Klasse managt die Besucher und deren Anzahl für eine Arena.
+ * @author armin
+ */
 public class BesucherAnzahl {
     private int anzahl;
     private final int MAX_ANZAHL;
@@ -13,8 +17,8 @@ public class BesucherAnzahl {
         return anzahl;
     }
     /**
-     * Gibt zurück ob noch Platz ist für den Besucher, wenn ja dann wird er eintretten
-     * @return Besucher könnte eintretten oder nicht
+     * Gibt zurück, ob der Besucher eintreten konnte
+     * @return Besucher konnte eintreten oder nicht
      */
     public boolean setAnzahlInc() {
         if(MAX_ANZAHL >= anzahl + 1) {
@@ -24,8 +28,10 @@ public class BesucherAnzahl {
         else
             return false;
     }
+
     /**
-     * Besucher verlässt die Arena
+     * Anzahl wird Dec
+     * @return true, wenn es funktioniert hat
      */
     public boolean setAnzahlDec() {
         if(anzahl > 0 )

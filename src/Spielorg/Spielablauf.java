@@ -42,7 +42,7 @@ public class Spielablauf {
     private Reitpaar[] spielSpielen(Reitpaar[] reitpaar) {
         reitpaar = randomGewinner(reitpaar);
         for (int i = 0; i < 3; i++) {
-            System.out.println("Nummer: " + i + " " + reitpaar[i].getReiter().getVerein());
+            System.out.println((i+1) + ".Platz" + ": "  + reitpaar[i].getReiter().getVerein());
         }
         return reitpaar;
     }
@@ -50,8 +50,8 @@ public class Spielablauf {
     /**
      * Reiter in einer Runde
      *
-     * @param reitpaar
-     * @return
+     * @param reitpaar Reitpaar in einer Runde
+     * @return Anzahl
      */
     private int getAnzahlReiter(Reitpaar[] reitpaar) {
         int j = 0;
@@ -66,7 +66,9 @@ public class Spielablauf {
     }
 
     /**
-     * Sieger Liste erstellen
+     * Siegerliste
+     * @param reitpaar Einzelne Runde
+     * @return Platzierungsliste
      */
     private Reitpaar[] randomGewinner(Reitpaar[] reitpaar) {
         int random;

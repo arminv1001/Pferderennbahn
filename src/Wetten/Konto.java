@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 /**
  * Pots der einzelnen Runden
+ * @author armin
  */
 public class Konto {
     private ArrayList<Double> konten;

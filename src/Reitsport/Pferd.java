@@ -1,5 +1,8 @@
 package Reitsport;
 
+/**
+ * Pferd wird implementiert von dem Interface PferdInt
+ */
 public class Pferd implements PferdInt {
     private String name;
     private String rasse;

@@ -50,7 +50,7 @@ class ZuschauerTest {
     }
 
     @org.junit.jupiter.api.Test
-    void arenaVerlassen() throws Widerspruch {
+    void arenaVerlassen() throws Widerspruch, Systemfehler {
         zuschauer.arenaBesuchen(arena);
         zuschauer.arenaVerlassen();
         assertNull(zuschauer.getStandort());
@@ -69,14 +69,14 @@ class ZuschauerTest {
     }
 
     @org.junit.jupiter.api.Test
-    void einloesen() throws Widerspruch, Systemfehler {
+    void einloesen() throws Widerspruch {
         arena.spieleSpielen();
 
         try {
             zuschauer.einloesen(0);
             zuschauer.getBeleg(0);
         }
-        catch (IndexOutOfBoundsException | NullPointerException e){
+        catch (Widerspruch e){
             assert true;
         }
 

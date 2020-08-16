@@ -34,17 +34,25 @@ public class Reitpaar {
         return pferd;
     }
 
-    /**
-     *
-    public boolean arenaAnmelden(Arena a) {
-       return a.getOrga().anmeldenReitpaar(this);
-    }*/
-
     public String getVerein() {
         return verein;
     }
 
+    /**
+     * Überschreibt das equals um zwei Reitpaare anhand ihres Vereins zu vergleichen
+     * @param reitpaar Reitpaar zum vergleichen
+     * @return Wenn beide Reitpaare vom gleichen Verein sind, dann wird true zurück gegeben
+     */
     public boolean equals(Reitpaar reitpaar) {
         return reitpaar.getVerein().equals(verein);
     }
+
+    /**
+     * Reitpaar meldet sich bei Arena a an
+     * @param a Arena bei der sich das Reitpaar anmeldet
+     */
+    public void anmeldenArena(Arena a){
+        a.anmeldenReitpaar(this);
+    }
 }
+

@@ -4,7 +4,7 @@ import Besucher.Zuschauer;
 import Reitsport.Reitpaar;
 
 /**
- * Wette abgeschlossen
+ * Wette
  *
  * @author armin
  */
@@ -14,7 +14,7 @@ public class Wette {
     private double betrag;
     private boolean eingeloest;
     private int id;
-    private int runde; //TODO auf den Beleg bringen und plus 1 rechnen
+    private int runde;
 
     public Wette(Zuschauer zuschauer, Reitpaar reitpaar, double betrag, WettID wettID, int pot) {
         this.zuschauer = zuschauer;

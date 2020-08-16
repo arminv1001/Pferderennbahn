@@ -1,7 +1,7 @@
 package Basis;
 
 /**
- * Klasse Mensch als Abstract
+ * Diese abstrakte Klasse "Mensch" soll einen Menschen mit seinem Vor- und Nachnamen, sowie seinem Alter definieren.
  * @author Armin
  */
 abstract public class Mensch {
