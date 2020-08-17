@@ -1,0 +1,19 @@
+@startuml
+(*)  --> "Arena wird erstellt"
+--> "Erstellung der Reitpaare"
+--> "Reitpaare melden sich an bei der Arena an"
+--> "Erstellung Spieplan"
+--> "Zuschauer betretten die Arena"
+If "Zuschauer Geld ist größer als 0" then
+--> "Wetten ablegen"
+--> [Zuschauer löst sie ein] "Wette einlösen"
+-->(*)
+
+Else
+--> "Zuschauen"
+
+-->(*)
+
+
+
+@enduml
