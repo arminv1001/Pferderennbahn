@@ -19,3 +19,10 @@ Personalien der Erwerber aufgenommen, als Nachweis auf die Quittung gedruckt und
 System eingespeist. Die Organisation (Orga) steuert die Anmeldungen und kümmert sich um
 den Spielplan, sowie den Spielverlauf, bekommt aber alle Signale von der Arena
 weitergeleitet.
+
+## UML-Diagramm
+![UMLKlassendiagramm](https://user-images.githubusercontent.com/69273468/152059864-4f528ded-97c9-491c-b14a-b51ea112c2ff.png)
+
+## Use-Case Diagramm
+
+![UseCaseDiagramm](https://user-images.githubusercontent.com/69273468/152059916-5a42a276-b9e8-4b61-8fff-1d95769021ff.jpg)
